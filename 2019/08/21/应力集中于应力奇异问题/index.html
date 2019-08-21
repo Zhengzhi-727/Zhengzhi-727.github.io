@@ -4,24 +4,30 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
   
-    <title>Z</title>
+    <title>应力集中于应力奇异问题 | Z</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Zhengzhi">
     
 
     
-    <meta name="description" content="Zhengzhi�ĸ��˲���">
-<meta name="keywords" content="ansys��python">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Z">
-<meta property="og:url" content="http://yoursite.com/index.html">
+    <meta name="description" content="在有限元分析当中经常会出现的一类问题，就是分析出来的结果爆表了，应力大得离谱。这当然不可能是真实结构反应出来的真实应力，而是在有限元数值计算中产生的在某一点处导数无穷。你会发现，这里的应力值会随着你网格的细分程度而增大，这就称为应力奇异。 应力奇异不同于应力集中，它是有限元数值计算自身的问题，实际工程中是不存在应力奇异的。弹性力学中的圣维南原理告诉我们 “在小边界上进行面力的静力等效改变后，只影响">
+<meta name="keywords" content="力学,ansys">
+<meta property="og:type" content="article">
+<meta property="og:title" content="应力集中于应力奇异问题">
+<meta property="og:url" content="http://yoursite.com/2019/08/21/应力集中于应力奇异问题/index.html">
 <meta property="og:site_name" content="Z">
-<meta property="og:description" content="Zhengzhi�ĸ��˲���">
+<meta property="og:description" content="在有限元分析当中经常会出现的一类问题，就是分析出来的结果爆表了，应力大得离谱。这当然不可能是真实结构反应出来的真实应力，而是在有限元数值计算中产生的在某一点处导数无穷。你会发现，这里的应力值会随着你网格的细分程度而增大，这就称为应力奇异。 应力奇异不同于应力集中，它是有限元数值计算自身的问题，实际工程中是不存在应力奇异的。弹性力学中的圣维南原理告诉我们 “在小边界上进行面力的静力等效改变后，只影响">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/08/21/应力集中于应力奇异问题/1.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/21/应力集中于应力奇异问题/2.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/21/应力集中于应力奇异问题/3.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/21/应力集中于应力奇异问题/4.png">
+<meta property="og:updated_time" content="2019-08-21T14:54:56.798Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Z">
-<meta name="twitter:description" content="Zhengzhi�ĸ��˲���">
+<meta name="twitter:title" content="应力集中于应力奇异问题">
+<meta name="twitter:description" content="在有限元分析当中经常会出现的一类问题，就是分析出来的结果爆表了，应力大得离谱。这当然不可能是真实结构反应出来的真实应力，而是在有限元数值计算中产生的在某一点处导数无穷。你会发现，这里的应力值会随着你网格的细分程度而增大，这就称为应力奇异。 应力奇异不同于应力集中，它是有限元数值计算自身的问题，实际工程中是不存在应力奇异的。弹性力学中的圣维南原理告诉我们 “在小边界上进行面力的静力等效改变后，只影响">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/21/应力集中于应力奇异问题/1.png">
 
     
     
@@ -73,12 +79,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/2019/08/21/应力集中于应力奇异问题/" title="应力集中于应力奇异问题" itemprop="url">应力集中于应力奇异问题</a>
@@ -92,9 +96,16 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <p>在有限元分析当中经常会出现的一类问题，就是分析出来的结果爆表了，应力大得离谱。这当然不可能是真实结构反应出来的真实应力，而是在有限元数值计算中产生的在某一点处导数无穷。你会发现，这里的应力值会随着你网格的细分程度而增大，这就称为应力奇异。</p>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			
+		
+		</div>
+		
+		<p>在有限元分析当中经常会出现的一类问题，就是分析出来的结果爆表了，应力大得离谱。这当然不可能是真实结构反应出来的真实应力，而是在有限元数值计算中产生的在某一点处导数无穷。你会发现，这里的应力值会随着你网格的细分程度而增大，这就称为应力奇异。</p>
 <p>应力奇异不同于应力集中，它是有限元数值计算自身的问题，实际工程中是不存在应力奇异的。弹性力学中的圣维南原理告诉我们 “在小边界上进行面力的静力等效改变后，只影响近处（局部区域）的应力，对绝大部分弹性体区域的应力没有明显影响。”这就意味着，你的计算结果中靠近载荷施加的位置和固定约束面上的定点位置通常存在应力奇异，这里的应力值是不准确的。此外，当你的模型中存在一些直角时也需要你对其进行倒圆角，可以有效的去除应力奇异，得到真实的应力值。</p>
 <p>应力奇异的表现形式与应力集中不同，一般表现为很小区域或单个节点为红色，且过渡急剧。总之就是看着不正常嘛。</p>
 <p>另外说一点一定要注意，那就是在你的分析中你关心的区域位置<strong>不要</strong>设边界、<strong>不要</strong>受载，实在避不开的话就把相邻部分的模型也建立出来，偷懒的话就用remote displacement/force（WB中）。不关心的区域的网格也别闲着没事分那么细，要是哪里的应力出现奇异超过了真实应力集中的位置不就影响你判断了吗。</p>
@@ -116,14 +127,9 @@
 <li><p>适当选择应力集中因素的位置<br> 如在构件应力低的部位</p>
 </li>
 </ol>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
@@ -141,24 +147,32 @@
 
 
 
-
-<div class="comments-count">
+	<div class="article-share" id="share">
 	
-</div>
+	  <div data-url="http://yoursite.com/2019/08/21/应力集中于应力奇异问题/" data-title="应力集中于应力奇异问题 | Z" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
 
 </footer>
 
-
-    </article>
-
-
-
-
+   	       
+	</article>
+	
+	
 
 
 
-</div>
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ 
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
@@ -280,12 +294,89 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
 
 
 
@@ -358,4 +449,4 @@ var _hmt = _hmt || [];
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
