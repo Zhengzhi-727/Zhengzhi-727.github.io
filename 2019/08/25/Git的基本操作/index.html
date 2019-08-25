@@ -55,32 +55,36 @@
   };
 </script>
 
-  <meta name="description" content="In full gear">
-<meta name="keywords" content="ansys, python">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Z">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="集中式版本控制其实在 Git 之前，很多人用的是 CVS ，也就是 Centralized Version Control ，这里的 Centralized 就是集中的意思。也就是那会，经过血的教训，人们开始意识到版本控制的重要性了，然后就搞了台服务器，在这台服务器里面就专门来管理各种版本，保存每个版本的更新、修改等操作记录。这时候一遇到什么问题，就可以直接去这台服务器找，比如你误删了代码，就到这">
+<meta name="keywords" content="Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git的基本操作">
+<meta property="og:url" content="http://yoursite.com/2019/08/25/Git的基本操作/index.html">
 <meta property="og:site_name" content="Z">
-<meta property="og:description" content="In full gear">
+<meta property="og:description" content="集中式版本控制其实在 Git 之前，很多人用的是 CVS ，也就是 Centralized Version Control ，这里的 Centralized 就是集中的意思。也就是那会，经过血的教训，人们开始意识到版本控制的重要性了，然后就搞了台服务器，在这台服务器里面就专门来管理各种版本，保存每个版本的更新、修改等操作记录。这时候一遇到什么问题，就可以直接去这台服务器找，比如你误删了代码，就到这">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/08/25/Git的基本操作/csv-1.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/25/Git的基本操作/git.png">
+<meta property="og:updated_time" content="2019-08-25T04:39:39.530Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Z">
-<meta name="twitter:description" content="In full gear">
-  <link rel="canonical" href="http://yoursite.com/">
+<meta name="twitter:title" content="Git的基本操作">
+<meta name="twitter:description" content="集中式版本控制其实在 Git 之前，很多人用的是 CVS ，也就是 Centralized Version Control ，这里的 Centralized 就是集中的意思。也就是那会，经过血的教训，人们开始意识到版本控制的重要性了，然后就搞了台服务器，在这台服务器里面就专门来管理各种版本，保存每个版本的更新、修改等操作记录。这时候一遇到什么问题，就可以直接去这台服务器找，比如你误删了代码，就到这">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/25/Git的基本操作/csv-1.png">
+  <link rel="canonical" href="http://yoursite.com/2019/08/25/Git的基本操作/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Z</title>
+  <title>Git的基本操作 | Z</title>
   
 
 
@@ -219,10 +223,11 @@
         <div class="content-wrap">
             
 
-          <div id="content" class="content page-home">
+          <div id="content" class="content page-post-detail">
             
-  <section id="posts" class="posts-expand">
-      
+
+  <div id="posts" class="posts-expand">
+    
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
@@ -243,9 +248,8 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">
-              
-              <a href="/2019/08/25/Git的基本操作/" class="post-title-link" itemprop="url">Git的基本操作</a>
+          <h1 class="post-title" itemprop="name headline">Git的基本操作
+
             
           </h1>
         
@@ -293,8 +297,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
-            <h3 id="集中式版本控制"><a href="#集中式版本控制" class="headerlink" title="集中式版本控制"></a>集中式版本控制</h3><p>其实在 Git 之前，很多人用的是 CVS ，也就是 Centralized Version Control ，这里的 Centralized 就是<strong>集中</strong>的意思。也就是那会，经过血的教训，人们开始意识到版本控制的重要性了，然后就搞了台服务器，在这台服务器里面就专门来管理各种版本，保存每个版本的更新、修改等操作记录。这时候一遇到什么问题，就可以直接去这台服务器找，比如你误删了代码，就到这台服务器找之前的版本，回退一下就可以了。</p>
+        <h3 id="集中式版本控制"><a href="#集中式版本控制" class="headerlink" title="集中式版本控制"></a>集中式版本控制</h3><p>其实在 Git 之前，很多人用的是 CVS ，也就是 Centralized Version Control ，这里的 Centralized 就是<strong>集中</strong>的意思。也就是那会，经过血的教训，人们开始意识到版本控制的重要性了，然后就搞了台服务器，在这台服务器里面就专门来管理各种版本，保存每个版本的更新、修改等操作记录。这时候一遇到什么问题，就可以直接去这台服务器找，比如你误删了代码，就到这台服务器找之前的版本，回退一下就可以了。</p>
 <img src="/2019/08/25/Git的基本操作/csv-1.png">
 
 <p>你们多人协作的时候，每次完成代码就更新到这台服务器上面去，这台服务器都完整的记录了你们的每个版本，每个动作。妈妈再也不用担心别人骂我傻逼了。</p>
@@ -330,150 +333,52 @@
 <p>git stash apply：恢复暂存的code</p>
 <p>git stash apply stash@{1}：如果暂存多次，可通过git stash list来查看，这里选择了恢复1号暂存</p>
 
-          
-        
-      
     </div>
 
     
     
     
+        
+      
+
       <footer class="post-footer">
-          <div class="post-eof"></div>
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/Git/" rel="tag"># Git</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/08/21/应力集中与应力奇异问题/" rel="next" title="应力集中与应力奇异问题">
+                  <i class="fa fa-chevron-left"></i> 应力集中与应力奇异问题
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
         
       </footer>
+    
   </div>
   
   
   
   </article>
 
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/21/应力集中与应力奇异问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhengzhi">
-      <meta itemprop="description" content="In full gear">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Z">
-    </span>
-      <header class="post-header">
-
-        
-          <h1 class="post-title" itemprop="name headline">
-              
-              <a href="/2019/08/21/应力集中与应力奇异问题/" class="post-title-link" itemprop="url">应力集中与应力奇异问题</a>
-            
-          </h1>
-        
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-21 22:27:09" itemprop="dateCreated datePublished" datetime="2019-08-21T22:27:09+08:00">2019-08-21</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-08-23 23:49:47" itemprop="dateModified" datetime="2019-08-23T23:49:47+08:00">2019-08-23</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/力学理论/" itemprop="url" rel="index"><span itemprop="name">力学理论</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-            <p>在有限元分析当中经常会出现的一类问题，就是分析出来的结果爆表了，应力大得离谱。这当然不可能是真实结构反应出来的真实应力，而是在有限元数值计算中产生的在某一点处导数无穷。你会发现，这里的应力值会随着你网格的细分程度而增大，这就称为应力奇异。</p>
-<p>应力奇异不同于应力集中，它是有限元数值计算自身的问题，实际工程中是不存在应力奇异的。弹性力学中的圣维南原理告诉我们 “在小边界上进行面力的静力等效改变后，只影响近处（局部区域）的应力，对绝大部分弹性体区域的应力没有明显影响。”这就意味着，你的计算结果中靠近载荷施加的位置和固定约束面上的定点位置通常存在应力奇异，这里的应力值是不准确的。此外，当你的模型中存在一些直角时也需要你对其进行倒圆角，可以有效的去除应力奇异，得到真实的应力值。</p>
-<p>应力奇异的表现形式与应力集中不同，一般表现为很小区域或单个节点为红色，且过渡急剧。总之就是看着不正常嘛。</p>
-<p>另外说一点一定要注意，那就是在你的分析中你关心的区域位置<strong>不要</strong>设边界、<strong>不要</strong>受载，实在避不开的话就把相邻部分的模型也建立出来，偷懒的话就用remote displacement/force（WB中）。不关心的区域的网格也别闲着没事分那么细，要是哪里的应力出现奇异超过了真实应力集中的位置不就影响你判断了吗。</p>
-<p>应力奇异搞明白了应力集中就简单多了，应力集中就是构件截面急剧变化的位置产生的高应力，其应力峰值远大于由基本公式算得的应力值。一般引起应力集中的几何特征就是台阶、沟槽、孔、缺口、裂纹等。像一些铸造件，材料内部本身就存在空隙或者杂质，这些空隙和杂质处出现应力集中就理所当然了，而这类问题就要交给断裂力学的模型来处理了。</p>
-<p>说了那么多概念，应力集中总是不好的吧，我们来看看怎么降低它。</p>
-<ol>
-<li><p>增大圆角</p>
-<img src="/2019/08/21/应力集中与应力奇异问题/1.png">
-</li>
-<li><p>流线型圆角：对于受拉和受弯的变截面圆杆几乎无应力集中发生</p>
-<img src="/2019/08/21/应力集中与应力奇异问题/2.png">
-</li>
-<li><p>抛物线形表面过渡</p>
-<img src="/2019/08/21/应力集中与应力奇异问题/3.png">
-</li>
-<li><p>椭圆孔</p>
-<img src="/2019/08/21/应力集中与应力奇异问题/4.png">
-</li>
-<li><p>适当选择应力集中因素的位置<br> 如在构件应力低的部位</p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
   </div>
-  
-  
-  
-  </article>
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -492,8 +397,17 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -569,6 +483,23 @@
 
         </div>
       </div>
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#集中式版本控制"><span class="nav-number">1.</span> <span class="nav-text">集中式版本控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式版本控制（Git）"><span class="nav-number">2.</span> <span class="nav-text">分布式版本控制（Git）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git的基本操作（不同操作系统命令有细微不同）"><span class="nav-number">3.</span> <span class="nav-text">git的基本操作（不同操作系统命令有细微不同）</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
     </div>
   </aside>
@@ -675,5 +606,9 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.3.0"></script>
+<script src="/js/post-details.js?v=7.3.0"></script>
+
+
 </body>
 </html>
