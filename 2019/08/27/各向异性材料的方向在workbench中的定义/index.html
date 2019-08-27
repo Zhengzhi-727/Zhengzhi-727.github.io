@@ -55,22 +55,26 @@
   };
 </script>
 
-  <meta name="description" content="转载或引用请注明出处：Zhengzhi-727.github.io  集中式版本控制其实在 Git 之前，很多人用的是 CVS ，也就是 Centralized Version Control ，这里的 Centralized 就是集中的意思。也就是那会，经过血的教训，人们开始意识到版本控制的重要性了，然后就搞了台服务器，在这台服务器里面就专门来管理各种版本，保存每个版本的更新、修改等操作记录。">
-<meta name="keywords" content="Git">
+  <meta name="description" content="转载或引用请注明出处：Zhengzhi-727.github.io  ansys workbench与经典ansys相比，集成了多种功能模块、优化了界面还封装了繁琐的操作，让工程人员易于使用。但workbench的核心没有变，APDL仍是实现复杂功能的唯一工具（我想可能ansys公司还没将APDL的工具开发完吧，毕竟功能太多）。 最近在网上看见一个问题，如何在workbench中定义各向异性材料">
+<meta name="keywords" content="ansys workbench,各向异性">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git的基本操作">
-<meta property="og:url" content="http://yoursite.com/2019/08/25/Git的基本操作/index.html">
+<meta property="og:title" content="各向异性材料的方向在workbench中的定义">
+<meta property="og:url" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/index.html">
 <meta property="og:site_name" content="Z">
-<meta property="og:description" content="转载或引用请注明出处：Zhengzhi-727.github.io  集中式版本控制其实在 Git 之前，很多人用的是 CVS ，也就是 Centralized Version Control ，这里的 Centralized 就是集中的意思。也就是那会，经过血的教训，人们开始意识到版本控制的重要性了，然后就搞了台服务器，在这台服务器里面就专门来管理各种版本，保存每个版本的更新、修改等操作记录。">
+<meta property="og:description" content="转载或引用请注明出处：Zhengzhi-727.github.io  ansys workbench与经典ansys相比，集成了多种功能模块、优化了界面还封装了繁琐的操作，让工程人员易于使用。但workbench的核心没有变，APDL仍是实现复杂功能的唯一工具（我想可能ansys公司还没将APDL的工具开发完吧，毕竟功能太多）。 最近在网上看见一个问题，如何在workbench中定义各向异性材料">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/08/25/Git的基本操作/csv-1.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/25/Git的基本操作/git.png">
-<meta property="og:updated_time" content="2019-08-27T15:34:43.554Z">
+<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/材料定义.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/赋予属性.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/单元方向.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/具体定义.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/定义效果.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/后处理.png">
+<meta property="og:updated_time" content="2019-08-27T15:33:48.092Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git的基本操作">
-<meta name="twitter:description" content="转载或引用请注明出处：Zhengzhi-727.github.io  集中式版本控制其实在 Git 之前，很多人用的是 CVS ，也就是 Centralized Version Control ，这里的 Centralized 就是集中的意思。也就是那会，经过血的教训，人们开始意识到版本控制的重要性了，然后就搞了台服务器，在这台服务器里面就专门来管理各种版本，保存每个版本的更新、修改等操作记录。">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/25/Git的基本操作/csv-1.png">
-  <link rel="canonical" href="http://yoursite.com/2019/08/25/Git的基本操作/">
+<meta name="twitter:title" content="各向异性材料的方向在workbench中的定义">
+<meta name="twitter:description" content="转载或引用请注明出处：Zhengzhi-727.github.io  ansys workbench与经典ansys相比，集成了多种功能模块、优化了界面还封装了繁琐的操作，让工程人员易于使用。但workbench的核心没有变，APDL仍是实现复杂功能的唯一工具（我想可能ansys公司还没将APDL的工具开发完吧，毕竟功能太多）。 最近在网上看见一个问题，如何在workbench中定义各向异性材料">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/材料定义.png">
+  <link rel="canonical" href="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/">
 
 
 <script id="page-configurations">
@@ -84,7 +88,7 @@
   };
 </script>
 
-  <title>Git的基本操作 | Z</title>
+  <title>各向异性材料的方向在workbench中的定义 | Z</title>
   
 
 
@@ -234,7 +238,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/25/Git的基本操作/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhengzhi">
@@ -248,7 +252,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">Git的基本操作
+          <h1 class="post-title" itemprop="name headline">各向异性材料的方向在workbench中的定义
 
             
           </h1>
@@ -265,19 +269,11 @@
                 
               
 
-              <time title="创建时间：2019-08-25 12:04:53" itemprop="dateCreated datePublished" datetime="2019-08-25T12:04:53+08:00">2019-08-25</time>
+              <time title="创建时间：2019-08-27 21:19:37 / 修改时间：23:33:48" itemprop="dateCreated datePublished" datetime="2019-08-27T21:19:37+08:00">2019-08-27</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-08-27 23:34:43" itemprop="dateModified" datetime="2019-08-27T23:34:43+08:00">2019-08-27</time>
-              </span>
             
           
             <span class="post-meta-item">
@@ -286,7 +282,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/代码世界/" itemprop="url" rel="index"><span itemprop="name">代码世界</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/操作实践/" itemprop="url" rel="index"><span itemprop="name">操作实践</span></a></span>
 
                 
                 
@@ -308,43 +304,32 @@
         <blockquote>
 <p>转载或引用请注明出处：<a href>Zhengzhi-727.github.io</a></p>
 </blockquote>
-<h3 id="集中式版本控制"><a href="#集中式版本控制" class="headerlink" title="集中式版本控制"></a>集中式版本控制</h3><p>其实在 Git 之前，很多人用的是 CVS ，也就是 Centralized Version Control ，这里的 Centralized 就是<strong>集中</strong>的意思。也就是那会，经过血的教训，人们开始意识到版本控制的重要性了，然后就搞了台服务器，在这台服务器里面就专门来管理各种版本，保存每个版本的更新、修改等操作记录。这时候一遇到什么问题，就可以直接去这台服务器找，比如你误删了代码，就到这台服务器找之前的版本，回退一下就可以了。</p>
+<p>ansys workbench与经典ansys相比，集成了多种功能模块、优化了界面还封装了繁琐的操作，让工程人员易于使用。但workbench的核心没有变，APDL仍是实现复杂功能的唯一工具（我想可能ansys公司还没将APDL的工具开发完吧，毕竟功能太多）。</p>
+<p>最近在网上看见一个问题，如何在workbench中定义各向异性材料，并使其材料的方向按自己想要的方式在几何中排布。APDL是个不错的解决办法，但workbench里不是更简单直接吗？</p>
 <a id="more"></a>
 
-<img src="/2019/08/25/Git的基本操作/csv-1.png">
+<ol>
+<li><p>首先，定义各向异性材料的基本参数。这里采用了复合材料的力学性能，材料命名为composite。</p>
+<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/材料定义.png">
+</li>
+<li><p>进入Mechanical，将复合材料属性赋予几何体，我这里将外面一层定义为复合材料，内部为金属嵌入件。</p>
+<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/赋予属性.png">
+</li>
+<li><p>选中模型树中的Geometry模块，可以看到上方出现了Element Orientation。没错，这就是定义材料方向，从字面意思上看就是定义划分单元的方向。好了，理论上每一个单元的方向你想怎么定义就可以怎么定义了！</p>
+<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/单元方向.png">
+</li>
+<li><p>这里我通过红色表面的法向作为材料Z方向，黄色线段方向作为材料Y方向，那么X方向自然也就唯一确定，这样我的复合材料像是缠绕在芯块上的，因为材料的1方向始终沿芯块的环向分布。</p>
+<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/具体定义.png">
 
-<p>你们多人协作的时候，每次完成代码就更新到这台服务器上面去，这台服务器都完整的记录了你们的每个版本，每个动作。妈妈再也不用担心别人骂我傻逼了。</p>
-<p>是不是觉得还挺不错的呢，但是这种集中式的版本控制方式有一个弊端，就是哪一天服务器突然傻逼了，那么你就没办法去上面拿到别人提交的版本，你也没办法更新你最新的版本上去。更可怕的是，如果哪天这台服务器直接坏掉，挖槽，那你们之前那些所有的版本记录不就烟消云散了吗？如果没人备份的话，那岂不是操了个操了？？</p>
-<h3 id="分布式版本控制（Git）"><a href="#分布式版本控制（Git）" class="headerlink" title="分布式版本控制（Git）"></a>分布式版本控制（Git）</h3><p>为了解决这个问题，牛逼的人就想到了一个方法，他们在想，既然这样，那么何必不在每个人的电脑里面，都装一份服务器上面的版本控制管理的镜像呢？也就是说，除了服务器上面有之外，我们的电脑，也有一份一样的控制系统。这个时候如果说服务器傻逼了，那么我们的内心毫无波动，还可以顺便唱一句：“怎么大风越荡，我心越浪”了，因为每个人本地都有（你每一次对版本的更新或者拉取，你的控制系统就是和服务器上的一样最新的，所以不用担心）啊，直接恢复就可以了。</p>
-<img src="/2019/08/25/Git的基本操作/git.png">
+<p>定义好后可查看效果：（因为是根据各单元进行方向定义，所以你得先完成网格划分）</p>
+<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/定义效果.png">
+</li>
+<li><p>后处理查看方法。如图，既然定义了单元坐标系，查看结果自然不能再用全局坐标系了，这里改为Solution Coordinate System，它查看的就是在各单元上的单元坐标系下的分析结果。这里的SX就是查看单元坐标系下X方向的应力，即材料1方向上的应力。</p>
+<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/后处理.png">
 
-<h3 id="git的基本操作（不同操作系统命令有细微不同）"><a href="#git的基本操作（不同操作系统命令有细微不同）" class="headerlink" title="git的基本操作（不同操作系统命令有细微不同）"></a>git的基本操作（不同操作系统命令有细微不同）</h3><p>git –version：获取版本号</p>
-<p>mkdir games：创建文件夹</p>
-<p>gamesgit init：初始化。创建一个空仓库，生成.git隐藏文件，实现Git管理必备文件ll查看当前文件下的所有文件</p>
-<p>git status：查看状态</p>
-<p>touch test.txt：新建test.txt文件</p>
-<p>git add test.txt：添加test.txt文件到 track，用git status可查看待提交的文件（ 把你工作区里面的新修改的文件生标记一下追踪，然后生成快照，记录起来，放到暂存区里面。这个时候并不是直接提交就到 Git 仓库里面去。）</p>
-<p>git add . ：添加当前目录下的所有文件到track</p>
-<p>git commit -m “XXX”：提交上一步add的文件给Git管理。m后面必须说明提交注释</p>
-<p>git help：列出所有git命令的解释</p>
-<p>git –help init：查看init的用法</p>
-<p>git log：查看日志</p>
-<p>git log -5：查看最后5条日志</p>
-<p>git commit –amend：修改上一次提交的信息（o切换编辑，shift+zz退出）</p>
-<p>git reset test6.txt：撤销track中的test6.txt文件（将test6从暂存区中移除）</p>
-<p>git reset . ：撤销track中的所有文件（将所有文件从暂存区中移除）</p>
-<p>git reset –soft HEAD~：撤销上一步的提交，回到上一次add后的状态</p>
-<p>git reset –hard +id号：退回到指定版本（id号位数输入到可以区分不同版本的长度即可）</p>
-<p>git branch显示项目分支情况</p>
-<p>git branch feature_1：创建feature_1分支（在master下新建分支）</p>
-<p>git checkout feature_1：切换到feature_1分支（在master下新建分支）</p>
-<p>git checkout -b feature_2：创建并切换到feature_2分支（在master下新建分支）</p>
-<p>vim test.txt：编辑test.txt文件</p>
-<p>git merge feature_1：合并feature_1分支（在master下合并分支）</p>
-<p>git branch -d feature_1：删除feature_1分支</p>
-<p>git stash：暂存，当写到一半code时需要切换分支时需将当前分支的code暂存才能成功切换，否者只能先提交才能切换分支</p>
-<p>git stash apply：恢复暂存的code</p>
-<p>git stash apply stash@{1}：如果暂存多次，可通过git stash list来查看，这里选择了恢复1号暂存</p>
+<p>解坐标系在workbench中应用广泛并具有重要价值。对于单元结果（如应力），在解坐标系下会为每个单元生成一个坐标系。如果这些单独的单元坐标系是随机对齐的，则可以将它们重新对齐到局部坐标系，以获得统一的对齐。例如因为与某个壳方向对齐的局部坐标系的结果通常比全局坐标系的结果更有意义。而在随机振动、频谱或显式动力学分析中，结果对象的坐标系默认设置为解坐标系不能更改，因为只有在解坐标系中查看结果时，结果才具有意义。</p>
+</li>
+</ol>
 
     </div>
 
@@ -360,7 +345,9 @@
           
           <div class="post-tags">
             
-              <a href="/tags/Git/" rel="tag"># Git</a>
+              <a href="/tags/ansys-workbench/" rel="tag"># ansys workbench</a>
+            
+              <a href="/tags/各向异性/" rel="tag"># 各向异性</a>
             
           </div>
         
@@ -370,8 +357,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/08/21/应力集中与应力奇异问题/" rel="next" title="应力集中与应力奇异问题">
-                  <i class="fa fa-chevron-left"></i> 应力集中与应力奇异问题
+                <a href="/2019/08/25/Git的基本操作/" rel="next" title="Git的基本操作">
+                  <i class="fa fa-chevron-left"></i> Git的基本操作
                 </a>
               
             </div>
@@ -379,10 +366,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/08/27/各向异性材料的方向在workbench中的定义/" rel="prev" title="各向异性材料的方向在workbench中的定义">
-                  各向异性材料的方向在workbench中的定义 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -414,17 +397,8 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -506,23 +480,6 @@
 
         </div>
       </div>
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#集中式版本控制"><span class="nav-number">1.</span> <span class="nav-text">集中式版本控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式版本控制（Git）"><span class="nav-number">2.</span> <span class="nav-text">分布式版本控制（Git）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git的基本操作（不同操作系统命令有细微不同）"><span class="nav-number">3.</span> <span class="nav-text">git的基本操作（不同操作系统命令有细微不同）</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
-      
 
     </div>
   </aside>
