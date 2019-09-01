@@ -55,26 +55,21 @@
   };
 </script>
 
-  <meta name="description" content="转载或引用请注明出处：Zhengzhi-727.github.io  ansys workbench与经典ansys相比，集成了多种功能模块、优化了界面还封装了繁琐的操作，让工程人员易于使用。但workbench的核心没有变，APDL仍是实现复杂功能的唯一工具（我想可能ansys公司还没将APDL的工具开发完吧，毕竟功能太多）。 最近在网上看见一个问题，如何在workbench中定义各向异性材料">
-<meta name="keywords" content="ansys workbench,各向异性">
+  <meta name="description" content="转载或引用请注明出处：Zhengzhi-727.github.io  对于材料是否失效的评判一直以来都是大家最为关注的。评判标准或称之为失效的力学模型发展至今已经有上百种，有些是根据理论推导，而有些则是凭空猜测再根据实验验证得到的。对于千百种的材料和受力方式，找到统一的理论模型去解释总是很难的，所以对症下药很重要。 透彻地了解你分析的问题，选择适用的评判标准。这是最基础的两点。比如说，分析脆性材">
+<meta name="keywords" content="力学,有限元,复合材料,ACP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="各向异性材料的方向在workbench中的定义">
-<meta property="og:url" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/index.html">
+<meta property="og:title" content="复合材料常用失效准则">
+<meta property="og:url" content="http://yoursite.com/2019/09/01/复合材料常用失效准则/index.html">
 <meta property="og:site_name" content="Z">
-<meta property="og:description" content="转载或引用请注明出处：Zhengzhi-727.github.io  ansys workbench与经典ansys相比，集成了多种功能模块、优化了界面还封装了繁琐的操作，让工程人员易于使用。但workbench的核心没有变，APDL仍是实现复杂功能的唯一工具（我想可能ansys公司还没将APDL的工具开发完吧，毕竟功能太多）。 最近在网上看见一个问题，如何在workbench中定义各向异性材料">
+<meta property="og:description" content="转载或引用请注明出处：Zhengzhi-727.github.io  对于材料是否失效的评判一直以来都是大家最为关注的。评判标准或称之为失效的力学模型发展至今已经有上百种，有些是根据理论推导，而有些则是凭空猜测再根据实验验证得到的。对于千百种的材料和受力方式，找到统一的理论模型去解释总是很难的，所以对症下药很重要。 透彻地了解你分析的问题，选择适用的评判标准。这是最基础的两点。比如说，分析脆性材">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/材料定义.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/赋予属性.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/单元方向.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/具体定义.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/定义效果.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/后处理.png">
-<meta property="og:updated_time" content="2019-08-27T15:33:48.092Z">
+<meta property="og:image" content="http://yoursite.com/2019/09/01/复合材料常用失效准则/puckabc.png">
+<meta property="og:updated_time" content="2019-09-01T14:32:56.443Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="各向异性材料的方向在workbench中的定义">
-<meta name="twitter:description" content="转载或引用请注明出处：Zhengzhi-727.github.io  ansys workbench与经典ansys相比，集成了多种功能模块、优化了界面还封装了繁琐的操作，让工程人员易于使用。但workbench的核心没有变，APDL仍是实现复杂功能的唯一工具（我想可能ansys公司还没将APDL的工具开发完吧，毕竟功能太多）。 最近在网上看见一个问题，如何在workbench中定义各向异性材料">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/材料定义.png">
-  <link rel="canonical" href="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/">
+<meta name="twitter:title" content="复合材料常用失效准则">
+<meta name="twitter:description" content="转载或引用请注明出处：Zhengzhi-727.github.io  对于材料是否失效的评判一直以来都是大家最为关注的。评判标准或称之为失效的力学模型发展至今已经有上百种，有些是根据理论推导，而有些则是凭空猜测再根据实验验证得到的。对于千百种的材料和受力方式，找到统一的理论模型去解释总是很难的，所以对症下药很重要。 透彻地了解你分析的问题，选择适用的评判标准。这是最基础的两点。比如说，分析脆性材">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/01/复合材料常用失效准则/puckabc.png">
+  <link rel="canonical" href="http://yoursite.com/2019/09/01/复合材料常用失效准则/">
 
 
 <script id="page-configurations">
@@ -88,7 +83,7 @@
   };
 </script>
 
-  <title>各向异性材料的方向在workbench中的定义 | Z</title>
+  <title>复合材料常用失效准则 | Z</title>
   
 
 
@@ -238,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/27/各向异性材料的方向在workbench中的定义/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/01/复合材料常用失效准则/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhengzhi">
@@ -252,7 +247,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">各向异性材料的方向在workbench中的定义
+          <h1 class="post-title" itemprop="name headline">复合材料常用失效准则
 
             
           </h1>
@@ -269,7 +264,7 @@
                 
               
 
-              <time title="创建时间：2019-08-27 21:19:37 / 修改时间：23:33:48" itemprop="dateCreated datePublished" datetime="2019-08-27T21:19:37+08:00">2019-08-27</time>
+              <time title="创建时间：2019-09-01 21:06:15 / 修改时间：22:32:56" itemprop="dateCreated datePublished" datetime="2019-09-01T21:06:15+08:00">2019-09-01</time>
             </span>
           
             
@@ -282,7 +277,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/操作实践/" itemprop="url" rel="index"><span itemprop="name">操作实践</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/力学理论/" itemprop="url" rel="index"><span itemprop="name">力学理论</span></a></span>
 
                 
                 
@@ -304,30 +299,77 @@
         <blockquote>
 <p>转载或引用请注明出处：<a href>Zhengzhi-727.github.io</a></p>
 </blockquote>
-<p>ansys workbench与经典ansys相比，集成了多种功能模块、优化了界面还封装了繁琐的操作，让工程人员易于使用。但workbench的核心没有变，APDL仍是实现复杂功能的唯一工具（我想可能ansys公司还没将APDL的工具开发完吧，毕竟功能太多）。</p>
-<p>最近在网上看见一个问题，如何在workbench中定义各向异性材料，并使其材料的方向按自己想要的方式在几何中排布。APDL是个不错的解决办法，但workbench里不是更简单直接吗？</p>
+<p>对于材料是否失效的评判一直以来都是大家最为关注的。评判标准或称之为失效的力学模型发展至今已经有上百种，有些是根据理论推导，而有些则是凭空猜测再根据实验验证得到的。对于千百种的材料和受力方式，找到统一的理论模型去解释总是很难的，所以对症下药很重要。</p>
+<p>透彻地了解你分析的问题，选择适用的评判标准。这是最基础的两点。比如说，分析脆性材料，可以用最大拉应力（第一强度理论）和最大拉应变理论（第二强度理论），如果该材料的拉压性能不同，诸如混凝土、铸铁压缩则应使用莫尔强度理论。对于普通的韧性材料，你可以用形状改变比能准则（第四强度理论/Von Mises），当然你想计算的偏保守一些就用最大剪切应力理论（第三强度理论）。</p>
+<hr>
+<p>而复合材料作为一种特殊的各向异性材料，具有独特的铺层工艺制造方法，其失效准则模型也是相当的多。我这里要说的是常用的几个单层理论模型，也是评判复合材料是否失效的主要理论。</p>
 <a id="more"></a>
 
+<p>先引用一段概述吧：</p>
+<blockquote>
+<p>《先进复合材料连接结构分析方法》：<br>典型复合材料结构有纤维失效、基体开裂、基体纤维剪切、分层等多种损伤模式。实际结构的破坏机理非常复杂，可能是多种损伤模式组合情况下的无规律扩展导致的极限破坏。英国的工程自然科学研究委员会和机械工程师协会在1991年组织了一个专家讨论会，邀请了世界上很多复合材料力学方面的专家，共同探讨“聚合物复合材料与结构的破坏预报:机理与判据”。<br>结果普遍认为：<br>1、目前复合材料的失效准则缺乏可靠度，即使对于最简单的单层板或层压板都缺乏一个准确的失效准则；<br>2、缺乏一个组成复合材料失效的广义定义。<br>为此， Hinton等人发起WWFE( World Wide Failure Exercise)，俗称“破坏分析奥运会”的活动，邀请了世界上纤维增强复合材料破坏理论研究领域的11个研究组织的知名专家对14个复合材料破坏理论进行了全面、客观的评估和研究。但研究发现，尽管当前存在着大量失效准则，但尚没有能够精确预测所有分析水平、所有失效模式、所有铺层形式和所有载荷边界条件的失效准则同时，通过对已有工程实际问题中应用准则情况的研究表明，采用最大应力准则进行评价大约占30％，最大应变准则进行评价大约占22％，采用蔡一希尔准则进行评价大约占17％，采用蔡一吴失效准则大约占11％，其它各种准则大约占20％。因此了解各种失效准则的应用范围和适用性对于准确进行结构强度预测是必要的。</p>
+</blockquote>
+<p>我结合学习到的理论知识和实际的使用，整理了一下，详细的公式就不贴出来了（软件已经为我们封装了，你只管选择你合适的用就行）</p>
 <ol>
-<li><p>首先，定义各向异性材料的基本参数。这里采用了复合材料的力学性能，材料命名为composite。</p>
-<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/材料定义.png">
+<li>最大应力理论：<ul>
+<li>各材料主方向应力必须小于各自方向的强度，否则即发生破坏；</li>
+<li>各种破坏模式之间没有相互影响；</li>
+<li>应用时，所考虑材料中的应力必须转换为材料主方向的应力（采用应力转轴公式计算）；</li>
+<li>该理论与实验结果不很一致；</li>
+<li>ACP中的表示为：s1t, s1c, s2t, s2c, s3t, s3c, s12, s23, s13。</li>
+</ul>
 </li>
-<li><p>进入Mechanical，将复合材料属性赋予几何体，我这里将外面一层定义为复合材料，内部为金属嵌入件。</p>
-<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/赋予属性.png">
+<li>最大应变理论：<ul>
+<li>各材料主方向应变必须小于各自方向的最大应变，否则即发生破坏；</li>
+<li>该理论与实验结果之间的差别比最大应力理论更加明显；</li>
+<li>ACP中的表示为：e1t, e1c, e2t,  e2c, e12。</li>
+</ul>
 </li>
-<li><p>选中模型树中的Geometry模块，可以看到上方出现了Element Orientation。没错，这就是定义材料方向，从字面意思上看就是定义划分单元的方向。好了，理论上每一个单元的方向你想怎么定义就可以怎么定义了！</p>
-<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/单元方向.png">
+<li>Tsai-Hill（蔡-希尔）强度理论：<ul>
+<li>由单层复合材料1方向拉伸强度X，2方向拉伸强度Y和12面内剪切强度S表示的基本破坏准则；</li>
+<li>该理论与实验之间吻合较好，破坏强度之间存在重要的相互联系，而最大应力、应变理论假定三种破坏是单独发生的；</li>
+<li>此理论可进行简化得到各向同性材料的结果；</li>
+<li>ACP中的表示为：th。其中，IRF&gt;1表示失效。</li>
+</ul>
 </li>
-<li><p>这里我通过红色表面的法向作为材料Z方向，黄色线段方向作为材料Y方向，那么X方向自然也就唯一确定，这样我的复合材料像是缠绕在芯块上的，因为材料的1方向始终沿芯块的环向分布。</p>
-<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/具体定义.png">
-
-<p>定义好后可查看效果：（因为是根据各单元进行方向定义，所以你得先完成网格划分）</p>
-<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/定义效果.png">
+<li>Hoffman理论：<ul>
+<li>在Tsai-Hill的基础上考虑了拉、压性能不同的复合材料；</li>
+<li>ACP中的表示为：ho。其中，IRF&gt;1表示失效。</li>
+</ul>
 </li>
-<li><p>后处理查看方法。如图，既然定义了单元坐标系，查看结果自然不能再用全局坐标系了，这里改为Solution Coordinate System，它查看的就是在各单元上的单元坐标系下的分析结果。这里的SX就是查看单元坐标系下X方向的应力，即材料1方向上的应力。</p>
-<img src="/2019/08/27/各向异性材料的方向在workbench中的定义/后处理.png">
-
-<p>解坐标系在workbench中应用广泛并具有重要价值。对于单元结果（如应力），在解坐标系下会为每个单元生成一个坐标系。如果这些单独的单元坐标系是随机对齐的，则可以将它们重新对齐到局部坐标系，以获得统一的对齐。例如因为与某个壳方向对齐的局部坐标系的结果通常比全局坐标系的结果更有意义。而在随机振动、频谱或显式动力学分析中，结果对象的坐标系默认设置为解坐标系不能更改，因为只有在解坐标系中查看结果时，结果才具有意义。</p>
+<li>Tsai-Wu（蔡-吴）张量理论：<strong>（用的很多）</strong><ul>
+<li>与实验数据之间有很好的一致性；</li>
+<li>该理论考虑了不同失效模式之间的联系；</li>
+<li>分析中需要定义交互参数(F12、F23、F13)。交互参数必须通过等双轴试验来确定，而这几乎是不可能完成的。因此，ANSYS中交互参数要么由曲线拟合定义，要么保留默认值-1；</li>
+<li>ACP中的表示为：tw。其中，IRF&gt;1表示失效。</li>
+</ul>
+</li>
+<li>Hashin准则：<ul>
+<li>一种基于失效机理的准则，可判断材料的失效模式；</li>
+<li>ACP中的表示为：hf(fiber failure)、hm(matrix failure)、hd(delamination failure)。</li>
+</ul>
+</li>
+<li>Puck ： <ul>
+<li>在分析中需准备极限应变数据；</li>
+<li>由实际失效模式下的物理驱动；</li>
+<li>纤维断裂可以用简单的应力准则来评估；</li>
+<li>Puck工作在复合材料失效的作用面上，并有三种纤维间断裂模式(模式A、B和C)；<img src="/2019/09/01/复合材料常用失效准则/puckabc.png"></li>
+<li>ACP中的表示为：pf(fiber failure)、pmA(matrix tension failure)、pmB(matrix compression failure)、pmC(matrix shear failure)、pd(delamination)。</li>
+</ul>
+</li>
+<li>Cuntze ：<ul>
+<li>由实际失效模式下的物理驱动；</li>
+<li>纤维断裂可以用简单的应力准则来评估；</li>
+<li>ACP中的表示为：cft(fiber tension failure)、cfc(fiber compression failure)、cmA(matrix tension failure)、cmB(matrix compression failure)、cmC(matrix wedge shape failure)。</li>
+</ul>
+</li>
+<li>LaRC：<ul>
+<li>由NASA兰利研究中心开发；</li>
+<li>在分析中需准备极限应变数据；</li>
+<li>基于Hashins和Pucks失效准则；</li>
+<li>考虑到铺层受到不同纤维取向层约束时，横向抗拉强度和抗剪强度较高的情况；</li>
+<li>ACP中的表示为：lf(fiberfailure)、lmt(matrix failuretension)、 lmc(matrix failurecompression)。</li>
+</ul>
 </li>
 </ol>
 
@@ -345,9 +387,13 @@
           
           <div class="post-tags">
             
-              <a href="/tags/ansys-workbench/" rel="tag"># ansys workbench</a>
+              <a href="/tags/力学/" rel="tag"># 力学</a>
             
-              <a href="/tags/各向异性/" rel="tag"># 各向异性</a>
+              <a href="/tags/有限元/" rel="tag"># 有限元</a>
+            
+              <a href="/tags/复合材料/" rel="tag"># 复合材料</a>
+            
+              <a href="/tags/ACP/" rel="tag"># ACP</a>
             
           </div>
         
@@ -357,8 +403,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/08/25/Git的基本操作/" rel="next" title="Git的基本操作">
-                  <i class="fa fa-chevron-left"></i> Git的基本操作
+                <a href="/2019/08/27/各向异性材料的方向在workbench中的定义/" rel="next" title="各向异性材料的方向在workbench中的定义">
+                  <i class="fa fa-chevron-left"></i> 各向异性材料的方向在workbench中的定义
                 </a>
               
             </div>
@@ -366,10 +412,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/09/01/复合材料常用失效准则/" rel="prev" title="复合材料常用失效准则">
-                  复合材料常用失效准则 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
